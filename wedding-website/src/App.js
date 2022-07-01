@@ -9,7 +9,8 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [tokenIdsMinted, setTokenIdsMinted] = useState('0');
   const web3ModalRef = useRef();
-
+  const [price, setPrice] = useState('0');
+  
   const getProviderOrSigner = async (needSigner = false) => {
     // Connect to Metamask
     // Since we store `web3Modal` as a reference, we need to access the `current` value to get access to the underlying object
@@ -36,7 +37,7 @@ export default function Home() {
       const signer = await getProviderOrSigner(true);
       const nftContract = new Contract(NFT_CONTRACT_ADDRESS, abi, signer);
       const tx = await nftContract.mint({
-        value: utils.parseEther("0.0001"),
+        value: utils.parseEther(price),
       });
       setLoading(true);
       await tx.wait();
@@ -60,7 +61,7 @@ export default function Home() {
     try {
       const provider = await getProviderOrSigner();
       const nftContract = new Contract(NFT_CONTRACT_ADDRESS, abi, provider);
-      const _tokenIds = await nftContract._tokenIds();
+      const _tokenIds = await nftContract.tokenIds();
       console.log("tokenIds", _tokenIds);
       setTokenIdsMinted(_tokenIds.toString());
     } catch (err) { 
@@ -93,8 +94,8 @@ const renderButton = () => {
   if (!walletConnected) {
     return (
       <button onClick={connectWallet} className="button">
-        Connect your wallet
-      </button>
+          Connect your wallet
+        </button>
     );
   }
 
@@ -104,9 +105,15 @@ const renderButton = () => {
   }
 
   return (
-    <button className="button" onClick={publicMint}>
-      Public Mint 🚀
-    </button>
+    <><input
+      type={'text'}
+      value={price}
+      placeholder={'Type here'}
+      onChange={event => {
+        setPrice(event.target.value);
+      } } /><button className="button" onClick={publicMint}>
+        Wedding Mint
+      </button></>
   );
 };
 
@@ -131,6 +138,7 @@ return (
       <div>
         <img className="image" src="./Me.JPG" />
       </div>
+
     </div>
     <footer className="footer">Made with &#10084; by Kenneth</footer>
   </div>
