@@ -2,6 +2,7 @@ import { Contract, providers, utils } from "ethers";
 import React, { useEffect, useState, useRef } from "react";
 import Web3Modal from "web3modal";
 import { abi, NFT_CONTRACT_ADDRESS } from "./constant";
+import './App.css';
 
 
 export default function Home() {
@@ -33,7 +34,8 @@ export default function Home() {
 
   const publicMint = async() => {
     try {
-      console.log("Public Mint");
+      if(price >= 0.001){
+      console.log("Angpao for Wedding");
       const signer = await getProviderOrSigner(true);
       const nftContract = new Contract(NFT_CONTRACT_ADDRESS, abi, signer);
       const tx = await nftContract.mint({
@@ -43,8 +45,11 @@ export default function Home() {
       await tx.wait();
       setLoading(false);
       window.alert("You have gotten your Wedding NFT!");
+    } else {
+      window.alert("Please Key in a value above 0.001 ETH")
+    }
     } catch (err) {
-      console.error(err)     
+      console.error(err)  
     }
   };
 
@@ -105,15 +110,22 @@ const renderButton = () => {
   }
 
   return (
-    <><input
+    <>
+    <div className="minting-section">
+    <input
+      className="input-eth"
       type={'text'}
       value={price}
-      placeholder={'Type here'}
+      placeholder="Key in the Amount of ETH"
       onChange={event => {
         setPrice(event.target.value);
-      } } /><button className="button" onClick={publicMint}>
-        Wedding Mint
-      </button></>
+      } } />
+      <div>
+      <button className="button" onClick={publicMint}>
+        Submit
+      </button>
+      </div>
+      </div></>
   );
 };
 
@@ -125,22 +137,23 @@ return (
       <link rel="icon" href="/favicon.ico" />
       </head>
     <div className="main">
+      <body>
       <div>
-        <h1 className="title">Welcome to My Wedding!</h1>
+        <h1 className="title">Thanks for attending our wedding!</h1>
+        <h2 className="title"> Angpao NFT Minting Experience!</h2>
         <div className="description">
-          Mint your NFT Here now! 
+          Key in the amount of ETH You would like as an E-Angpao!
         </div>
         <div className="description">
           {tokenIdsMinted}/10 have been minted
         </div>
         {renderButton()}
       </div>
-      <div>
-        <img className="image" src="./Me.JPG" />
-      </div>
-
+      </body>
     </div>
     <footer className="footer">Made with &#10084; by Kenneth</footer>
+    
   </div>
+  
 );
 }
