@@ -24,8 +24,6 @@ export default function Home() {
       setCoins(res.data);
   }).catch(error => console.log(error));
   }, []);
-
-console.log(coins.ethereum.sgd);
   
   const getProviderOrSigner = async (needSigner = false) => {
     // Connect to Metamask
@@ -148,7 +146,6 @@ const renderButton = () => {
       </div></>
   );
 };
-
 
 return (
   <div>
