@@ -3,6 +3,7 @@ import React, { useEffect, useState, useRef } from "react";
 import Web3Modal from "web3modal";
 import { abi, NFT_CONTRACT_ADDRESS } from "./constant";
 import './App.css';
+import axios from "axios";
 
 
 export default function Home() {
@@ -11,6 +12,20 @@ export default function Home() {
   const [tokenIdsMinted, setTokenIdsMinted] = useState('0');
   const web3ModalRef = useRef();
   const [price, setPrice] = useState('0');
+  const [coins, setCoins] = useState([]);
+ 
+
+  useEffect(() => {
+    axios
+    .get(
+      'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=sgd'
+    )
+    .then(res => {
+      setCoins(res.data);
+  }).catch(error => console.log(error));
+  }, []);
+
+console.log(coins.ethereum.sgd);
   
   const getProviderOrSigner = async (needSigner = false) => {
     // Connect to Metamask
@@ -125,9 +140,15 @@ const renderButton = () => {
         Submit
       </button>
       </div>
+      <div>
+        <p>
+          Amount in SGD: ${(coins.ethereum.sgd*price).toLocaleString()}
+        </p>
+      </div>
       </div></>
   );
 };
+
 
 return (
   <div>
