@@ -48,24 +48,17 @@ body {
   html, body {
     min-width: 320px; } }
 
-html {
-  box-sizing: border-box; }
-
 
 html, body {
   height: 100%;
   overflow-x: hidden;
   width: 100%; }
-  @media screen and (max-height: 640px) {
-    html, body {
-      height: auto;
-      min-height: 100%; } }
+
 
 body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  justify-content: center;
   background-color: wheat;
   animation: animate 16s ease-in-out infinite;
  }
@@ -77,23 +70,29 @@ body {
  .description {
   color: black;
  }
+
  @keyframes animate {
     0%,100% {
-      background-image: url('../public/img2.JPG');
+      background-image: url('../public/4.JPG');
+      
     }
     25% {
-      background-image: url('../public/img3.JPG');
+      background-image: url('../public/7.JPG');
+      width: auto;
     }
     50% {
-      background-image: url('../public/img4.JPG');
+      background-image: url('../public/5.JPG');
+      width: auto;
     }
     75% {
-      background-image: url('../public/img4.JPG');
+      background-image: url('../public/2.JPG');
+      width: auto;
     }
  }
   @media screen and (max-width: 1680px) {
     body {
-      height: 80vh;
+      height: 100vh;
+      background-position: 50%;
     } }
   @media screen and (max-width: 736px) {
     body {
@@ -103,6 +102,68 @@ body {
   @media screen and (max-width: 360px) {
     body {
       height:80vh; } }
+
+@media screen and (max-width: 1680px) {
+  @keyframes animate {
+    0%,100% {
+      background-image: url('../public/img1.JPG');
+      
+    }
+    25% {
+      background-image: url('../public/img2.JPG');
+      width: auto;
+    }
+    50% {
+      background-image: url('../public/img3.JPG');
+      width: auto;
+    }
+    75% {
+      background-image: url('../public/img4.JPG');
+      width: auto;
+    }
+ }
+}
+@media screen and (max-width: 736px) {
+  @keyframes animate {
+    0%,100% {
+      background-image: url('../public/img1.JPG');
+      
+    }
+    25% {
+      background-image: url('../public/img2.JPG');
+      width: auto;
+    }
+    50% {
+      background-image: url('../public/img3.JPG');
+      width: auto;
+    }
+    75% {
+      background-image: url('../public/img4.JPG');
+      width: auto;
+    }
+ }
+}
+
+@media screen and (max-width: 360px) {
+  @keyframes animate {
+    0%,100% {
+      background-image: url('../public/img1.JPG');
+      
+    }
+    25% {
+      background-image: url('../public/img2.JPG');
+      width: auto;
+    }
+    50% {
+      background-image: url('../public/img3.JPG');
+      width: auto;
+    }
+    75% {
+      background-image: url('../public/img4.JPG');
+      width: auto;
+    }
+ }
+}
 
 
 /* Type */
