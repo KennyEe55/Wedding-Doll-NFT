@@ -9,11 +9,19 @@ import axios from "axios";
 export default function Home() {
   const [walletConnected,setWalletConnected] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [pageLoading, setPageLoading] = useState(false);
   const [tokenIdsMinted, setTokenIdsMinted] = useState('0');
   const web3ModalRef = useRef();
   const [price, setPrice] = useState('0');
   const [coins, setCoins] = useState([]);
  
+useEffect(()=> {
+  setPageLoading(true)
+  setTimeout(() => {
+    setPageLoading(false)
+  }, 3500)
+}, [])
+
 
   useEffect(() => {
     axios
@@ -31,11 +39,10 @@ export default function Home() {
     const provider = await web3ModalRef.current.connect();
     const web3Provider = new providers.Web3Provider(provider);
 
-    // If user is not connected to the Mumbai network, let them know and throw an error
+    // If user is not connected to the Rinkeby network, let them know and throw an error
     const { chainId } = await web3Provider.getNetwork();
     if (chainId !== 4) {
       window.alert("Change the network to Rinkeby");
-      throw new Error("Change network to Rinkeby");
     }
 
     if (needSigner) {
@@ -148,6 +155,7 @@ const renderButton = () => {
 };
 
 return (
+  
   <div>
       <head>
       <title>Wedding NFT</title>
@@ -155,18 +163,22 @@ return (
       <link rel="icon" href="/favicon.ico" />
       </head>
     <div className="main">
+      
       <body>
-      <div>
-        <h1 className="title">Thanks for attending our wedding!</h1>
-        <h2 className="title"> Angpao NFT Minting Experience!</h2>
+      {pageLoading ? (
+        <div id="preloader">
+          <p>Loading...</p>
+        </div>
+      ): 
+      (<div>
+        <h1 className="title"> Mint Your Wedding NFT</h1>
         <div className="description">
-          Key in the amount of ETH You would like as an E-Angpao!
+          Key in the amount of ETH You would like as an E-Angbao!
         </div>
         <div className="description">
-          {tokenIdsMinted}/10 have been minted
         </div>
         {renderButton()}
-      </div>
+      </div>)}
       </body>
     </div>
     <footer className="footer">Made with &#10084; by Kenneth</footer>

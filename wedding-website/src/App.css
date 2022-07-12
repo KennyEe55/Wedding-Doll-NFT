@@ -1,6 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
-/*
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Cookie&family=Dancing+Script:wght@500&family=Great+Vibes&family=Lobster&family=Playball&family=Satisfy&family=Tangerine&family=The+Nautigal&display=swap');/*
 	Eventually by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
@@ -28,7 +28,7 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  line-height: 1;
+  line-height: 0;
   background-color: #199e83; }
 
 
@@ -58,13 +58,12 @@ html, body {
 body {
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 150vh;
   background-color: wheat;
   animation: animate 16s ease-in-out infinite;
  }
  .main {
   text-align: center;
-  padding-top: 100px;
  }
 
  .description {
@@ -167,34 +166,42 @@ body {
 
 
 /* Type */
-body, input, textarea {
+body, input {
   color: rgba(0, 0, 0, 0.35);
-  font-family: "Roboto", sans-serif;
+  font-family: "Tangerine", cursive;
   font-size: 16pt;
   font-weight: 400;
   letter-spacing: -0.01em;
-  line-height: 1.65em; }
+  line-height: 1.65em;
+  align-items: center;
+ }
   @media screen and (max-width: 1680px) {
-    body, input, select, textarea {
+    body, input, textarea {
       font-size: 12pt; } }
   @media screen and (max-width: 1280px) {
-    body, input, select, textarea {
+    body, input,  textarea {
       font-size: 11pt; } }
   @media screen and (max-width: 980px) {
-    body, input, select, textarea {
+    body, input, textarea {
       font-size: 12pt; } }
   @media screen and (max-width: 736px) {
-    body, input, select, textarea {
+    body, input, textarea {
       font-size: 12pt; } }
   @media screen and (max-width: 480px) {
-    body, input, select, textarea {
+    body, input, textarea {
       font-size: 12pt; } }
+
+.description, textarea {
+  font-family: "Lobster", cursive;
+}
 
 p {
   color: black;
+  font-family: "Lobster", cursive;
   margin: 0 0 2em 0; }
 
 h1, h2, h3, h4, h5, h6 {
+  padding-top: 65px;
   color:black;
   font-weight: 700;
   line-height: 1em;
@@ -213,14 +220,16 @@ h2 {
 
 input[type="text"] {
   background-color: transparent;
+  font-size: 18px;
   border-radius: 50px;
   border: none;
-  border: solid 2px rgba(255, 255, 255, 0.35);
+  border: solid 2px rgba(8, 8, 8, 0.35);
   color: inherit;
   outline: 0;
   padding: 0 1em;
   text-decoration: none;
   width: 20%; 
+  font-weight: 800;
   
 }
   input[type="text"]:invalid {
@@ -340,3 +349,18 @@ button,
       margin: 1em 0 0 0;
       position: relative; }
     }
+
+ #preloader {
+  background: white url(../public/loving.gif) no-repeat center center;
+  background-size: 20%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  text-align: center;
+  color: black;
+ }
+ 
+ #preloader p {
+  padding-top: 400px;
+ }
