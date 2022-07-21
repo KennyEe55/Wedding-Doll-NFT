@@ -59,11 +59,13 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 150vh;
-  background-color: wheat;
+  background-color: rgb(255, 255, 255);
   animation: animate 16s ease-in-out infinite;
  }
  .main {
   text-align: center;
+  background-color: #ffffff;
+  opacity: 1;
  }
 
  .description {
@@ -105,7 +107,7 @@ body {
 @media screen and (max-width: 1680px) {
   @keyframes animate {
     0%,100% {
-      background-image: url('../public/img1.JPG');
+      background-image: url('../public/IMG12.JPG');
       
     }
     25% {
@@ -117,7 +119,7 @@ body {
       width: auto;
     }
     75% {
-      background-image: url('../public/img4.JPG');
+      background-image: url('../public/IMG13.JPG');
       width: auto;
     }
  }
@@ -125,7 +127,7 @@ body {
 @media screen and (max-width: 736px) {
   @keyframes animate {
     0%,100% {
-      background-image: url('../public/img1.JPG');
+      background-image: url('../public/IMG12.JPG');
       
     }
     25% {
@@ -137,7 +139,7 @@ body {
       width: auto;
     }
     75% {
-      background-image: url('../public/img4.JPG');
+      background-image: url('../public/IMG13.JPG');
       width: auto;
     }
  }
@@ -146,7 +148,7 @@ body {
 @media screen and (max-width: 360px) {
   @keyframes animate {
     0%,100% {
-      background-image: url('../public/img1.JPG');
+      background-image: url('../public/IMG12.JPG');
       
     }
     25% {
@@ -158,7 +160,7 @@ body {
       width: auto;
     }
     75% {
-      background-image: url('../public/img4.JPG');
+      background-image: url('../public/IMG13.JPG');
       width: auto;
     }
  }
@@ -174,6 +176,7 @@ body, input {
   letter-spacing: -0.01em;
   line-height: 1.65em;
   align-items: center;
+  background-color: #ffffff;
  }
   @media screen and (max-width: 1680px) {
     body, input, textarea {
