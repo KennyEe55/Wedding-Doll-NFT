@@ -10,9 +10,8 @@ export default function Home() {
   const [walletConnected,setWalletConnected] = useState(false);
   const [loading, setLoading] = useState(false);
   const [pageLoading, setPageLoading] = useState(false);
-  const [tokenIdsMinted, setTokenIdsMinted] = useState('0');
   const web3ModalRef = useRef();
-  const [price, setPrice] = useState('0');
+  const [price, setPrice] = useState('Key in Amount');
   const [coins, setCoins] = useState([]);
  
 useEffect(()=> {
@@ -82,17 +81,6 @@ useEffect(()=> {
     }
   };
 
-  const getTokenIdsMinted = async() => {
-    try {
-      const provider = await getProviderOrSigner();
-      const nftContract = new Contract(NFT_CONTRACT_ADDRESS, abi, provider);
-      const _tokenIds = await nftContract.tokenIds();
-      console.log("tokenIds", _tokenIds);
-      setTokenIdsMinted(_tokenIds.toString());
-    } catch (err) { 
-      console.error(err)
-    }
-  }
 
   useEffect(() => {
     // if wallet is not connected, create a new instance of Web3Modal and connect the MetaMask wallet
@@ -106,11 +94,7 @@ useEffect(()=> {
       });
 
       //connectWallet();
-      getTokenIdsMinted();
 
-      setInterval(async function () {
-        await getTokenIdsMinted();
-      }, 5 * 1000);
     }
 }, [walletConnected]);
 
