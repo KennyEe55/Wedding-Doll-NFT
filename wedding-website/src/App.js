@@ -120,7 +120,7 @@ const renderButton = () => {
       className="input-eth"
       type={'text'}
       value={price}
-      placeholder="Key in the Amount of ETH"
+      placeholder="Enter here"
       onChange={event => {
         setPrice(event.target.value);
       } } />
@@ -131,7 +131,7 @@ const renderButton = () => {
       </div>
       <div>
         <p>
-          Amount in SGD: ${(coins.ethereum.sgd*price).toLocaleString()}
+          Amount (SGD): ${(coins.ethereum.sgd*price).toLocaleString()}
         </p>
       </div>
       </div></>
@@ -157,7 +157,7 @@ return (
       (<div>
         <h1 className="title"> Mint Your Wedding NFT</h1>
         <div className="description">
-          Key in the amount of ETH You would like as an E-Angbao!
+          Enter the amount of ETH you would like to gift!
         </div>
         <div className="description">
         </div>
