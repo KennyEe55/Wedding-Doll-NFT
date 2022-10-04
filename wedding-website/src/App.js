@@ -40,8 +40,8 @@ useEffect(()=> {
 
     // If user is not connected to the Rinkeby network, let them know and throw an error
     const { chainId } = await web3Provider.getNetwork();
-    if (chainId !== 4) {
-      window.alert("Change the network to Rinkeby");
+    if (chainId !== 5) {
+      window.alert("Change the network to Goerli");
     }
 
     if (needSigner) {
