@@ -1,5 +1,31 @@
 {
-    "name":"9",
+    "name":"KenVeeLastForever #9",
     "description":"Test Wedding NFT Collection",
-    "image":"ipfs://QmPK6g9CdnNRU57TE9ZZkH11HAaw9P2cTs1Dc7NMKjakGW/9.png"
+    "image":"ipfs://QmPK6g9CdnNRU57TE9ZZkH11HAaw9P2cTs1Dc7NMKjakGW/9.png",
+    "attributes": [
+        {
+          "trait_type": "Background", 
+          "value": "Hell"
+        }, 
+        {
+          "trait_type": "Groom's Outfit", 
+          "value": "Rubbish man"
+        }, 
+        {
+          "trait_type": "Bride's Outfit", 
+          "value": "Janitor"
+        }, 
+        {
+          "trait_type": "Groom's expression", 
+          "value": "Sianzzz"
+        }, 
+        {
+          "trait_type": "Bride's Expression", 
+          "value": "Despising"
+        }, 
+        {
+          "trait_type": "Dialogue", 
+          "value": "We hate chores"
+        }
+    ]
    }

@@ -1,5 +1,31 @@
 {
-    "name":"5",
+    "name":"KenVeeLastForever #5",
     "description":"Test Wedding NFT Collection",
-    "image":"ipfs://QmPK6g9CdnNRU57TE9ZZkH11HAaw9P2cTs1Dc7NMKjakGW/5.png"
+    "image":"ipfs://QmPK6g9CdnNRU57TE9ZZkH11HAaw9P2cTs1Dc7NMKjakGW/5.png",
+    "attributes": [
+        {
+          "trait_type": "Background", 
+          "value": "Red"
+        }, 
+        {
+          "trait_type": "Groom's Outfit", 
+          "value": "Casual Singlet"
+        }, 
+        {
+          "trait_type": "Bride's Outfit", 
+          "value": "Casual Blue Hoodie"
+        }, 
+        {
+          "trait_type": "Groom's expression", 
+          "value": "I fked up"
+        }, 
+        {
+          "trait_type": "Bride's Expression", 
+          "value": "Angry"
+        }, 
+        {
+          "trait_type": "Dialogue", 
+          "value": "Groom Get Rekted"
+        }
+    ]
    }
