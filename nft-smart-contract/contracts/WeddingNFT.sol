@@ -8,7 +8,7 @@ contract WeddingNFT is ERC721Enumerable, Ownable {
     string _baseTokenURI;
     uint256 public _minPrice = 0.00001 ether; 
     bool public _paused; 
-    uint256 public maxTokenIds = 20;
+    uint256 public maxTokenIds = 11;
     uint256 public tokenIds;
 
     modifier onlyWhenNotPaused {
