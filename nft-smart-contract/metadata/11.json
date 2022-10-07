@@ -1,31 +1,31 @@
 {
-  "name":"VeeKenLastForever #8",
+  "name":"VeeKenLastForever #10",
   "description":"Thank you for coming down for our wedding! This is the first wedding in Singapore or the World to give an NFT as a doll gift in exchange for your ETH as Ang bao! The collection reflects the different phases/moods in our life, some fun, some not so fun.",
-    "image":"ipfs://QmPK6g9CdnNRU57TE9ZZkH11HAaw9P2cTs1Dc7NMKjakGW/8.png",
+    "image":"ipfs://QmPK6g9CdnNRU57TE9ZZkH11HAaw9P2cTs1Dc7NMKjakGW/10.png",
     "attributes": [
         {
           "trait_type": "Background", 
-          "value": "Hell"
+          "value": "Pink and blue"
         }, 
         {
           "trait_type": "Groom's Outfit", 
-          "value": "Rubbish man"
+          "value": "Work Suit"
         }, 
         {
           "trait_type": "Bride's Outfit", 
-          "value": "Janitor"
+          "value": "T-shirt and Jeans"
         }, 
         {
           "trait_type": "Groom's expression", 
-          "value": "Sianzzz"
+          "value": "Happy"
         }, 
         {
           "trait_type": "Bride's Expression", 
-          "value": "Despising"
+          "value": "Happy"
         }, 
         {
           "trait_type": "Dialogue", 
-          "value": "We hate chores"
+          "value": "Our Work Outfits"
         }
     ]
    }

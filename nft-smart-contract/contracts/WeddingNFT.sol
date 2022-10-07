@@ -16,7 +16,7 @@ contract WeddingNFT is ERC721Enumerable, Ownable {
         _;
     }
 
-    constructor (string memory baseURI) ERC721("KenVeeMarried","KVW") {
+    constructor (string memory baseURI) ERC721("VeeKenWedding","KVW") {
         _baseTokenURI = baseURI; 
     }
 
