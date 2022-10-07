@@ -5,23 +5,23 @@
     "attributes": [
         {
           "trait_type": "Background", 
-          "value": "On Stage"
+          "value": "Dynamic"
         }, 
         {
           "trait_type": "Groom's Outfit", 
-          "value": "Naked Leaf"
+          "value": "Wedding Suit"
         }, 
         {
           "trait_type": "Bride's Outfit", 
-          "value": "Naked Leaf"
+          "value": "Wedding Gown"
         }, 
         {
           "trait_type": "Groom's expression", 
-          "value": "Scared"
+          "value": "Happy"
         }, 
         {
           "trait_type": "Bride's Expression", 
-          "value": "Embarrassed"
+          "value": "Happy"
         }, 
         {
           "trait_type": "Dialogue", 

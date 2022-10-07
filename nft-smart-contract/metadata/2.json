@@ -1,23 +1,23 @@
 {
-  "name":"VeeKenLastForever #1",
-  "description":"Thank you for coming down for our wedding! This is the first wedding in Singapore or the World to give an NFT as a doll gift in exchange for your ETH as Ang bao! The collection reflects the different phases/moods in our life, some fun, some not so fun.",
+    "name":"VeeKenLastForever #1",
+    "description":"Thank you for coming down for our wedding! This is the first wedding in Singapore or the World to give an NFT as a doll gift in exchange for your ETH as Ang bao! The collection reflects the different phases/moods in our life, some fun, some not so fun.",
     "image":"ipfs://QmPK6g9CdnNRU57TE9ZZkH11HAaw9P2cTs1Dc7NMKjakGW/1.png",
     "attributes": [
         {
           "trait_type": "Background", 
-          "value": "Teal"
+          "value": "Jurong Lake Garden"
         }, 
         {
           "trait_type": "Groom's Outfit", 
-          "value": "Suspenders"
+          "value": "Wedding Suit"
         }, 
         {
           "trait_type": "Bride's Outfit", 
-          "value": "Casual Hoodie"
+          "value": "Wedding Gown"
         }, 
         {
           "trait_type": "Groom's expression", 
-          "value": "Ah Choo!"
+          "value": "Happy"
         }, 
         {
           "trait_type": "Bride's Expression", 

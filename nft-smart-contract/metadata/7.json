@@ -5,19 +5,19 @@
     "attributes": [
         {
           "trait_type": "Background", 
-          "value": "Dynamic"
+          "value": "Sunny"
         }, 
         {
           "trait_type": "Groom's Outfit", 
-          "value": "Wedding Suit"
+          "value": "Casual Singlet"
         }, 
         {
           "trait_type": "Bride's Outfit", 
-          "value": "Wedding Gown"
+          "value": "Casual Hoodie"
         }, 
         {
           "trait_type": "Groom's expression", 
-          "value": "Happy"
+          "value": "Amazed"
         }, 
         {
           "trait_type": "Bride's Expression", 
@@ -25,7 +25,7 @@
         }, 
         {
           "trait_type": "Dialogue", 
-          "value": "None"
+          "value": "Where We Begin"
         }
     ]
    }

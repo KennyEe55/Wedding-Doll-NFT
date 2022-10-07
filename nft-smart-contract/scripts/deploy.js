@@ -2,7 +2,7 @@ const { ethers } = require("hardhat");
 require("dotenv").config({ path: ".env"});
 
 async function main() {
-    const metadataURL = "ipfs://QmSH9g5nvJKzexFWrAxg3B5kJDw1r1FjxSx68fv4pfRM8C/";
+    const metadataURL = "ipfs://QmNUp5KhhA9VinFqnLT7sMsq2319gaMYjBZAn2fh7Csdwt/";
 
     const weddingNFTContract = await ethers.getContractFactory("WeddingNFT");
     const deployWeddingNFTContract = await weddingNFTContract.deploy(metadataURL);

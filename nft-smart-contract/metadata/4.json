@@ -5,23 +5,23 @@
     "attributes": [
         {
           "trait_type": "Background", 
-          "value": "Starry"
+          "value": "Pink"
         }, 
         {
           "trait_type": "Groom's Outfit", 
-          "value": "Casual Singlet"
+          "value": "Dollar Bills"
         }, 
         {
           "trait_type": "Bride's Outfit", 
-          "value": "Casual Knitted Long Sleeve"
+          "value": "Casual Hoodie"
         }, 
         {
           "trait_type": "Groom's expression", 
-          "value": "Nom Nom"
+          "value": "Happy"
         }, 
         {
           "trait_type": "Bride's Expression", 
-          "value": "Hungry"
+          "value": "Happy"
         }, 
         {
           "trait_type": "Dialogue", 

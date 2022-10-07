@@ -5,7 +5,7 @@
     "attributes": [
         {
           "trait_type": "Background", 
-          "value": "Sunny"
+          "value": "Red"
         }, 
         {
           "trait_type": "Groom's Outfit", 
@@ -13,19 +13,19 @@
         }, 
         {
           "trait_type": "Bride's Outfit", 
-          "value": "Casual Hoodie"
+          "value": "Casual Blue Hoodie"
         }, 
         {
           "trait_type": "Groom's expression", 
-          "value": "Amazed"
+          "value": "I fked up"
         }, 
         {
           "trait_type": "Bride's Expression", 
-          "value": "Happy"
+          "value": "Angry"
         }, 
         {
           "trait_type": "Dialogue", 
-          "value": "Where We Begin"
+          "value": "Groom Get Rekted"
         }
     ]
    }

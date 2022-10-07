@@ -5,27 +5,27 @@
     "attributes": [
         {
           "trait_type": "Background", 
-          "value": "Hell"
+          "value": "On Stage"
         }, 
         {
           "trait_type": "Groom's Outfit", 
-          "value": "Rubbish man"
+          "value": "Naked Leaf"
         }, 
         {
           "trait_type": "Bride's Outfit", 
-          "value": "Janitor"
+          "value": "Naked Leaf"
         }, 
         {
           "trait_type": "Groom's expression", 
-          "value": "Sianzzz"
+          "value": "Scared"
         }, 
         {
           "trait_type": "Bride's Expression", 
-          "value": "Despising"
+          "value": "Embarrassed"
         }, 
         {
           "trait_type": "Dialogue", 
-          "value": "We hate chores"
+          "value": "None"
         }
     ]
    }

@@ -5,11 +5,11 @@
     "attributes": [
         {
           "trait_type": "Background", 
-          "value": "Pink"
+          "value": "Teal"
         }, 
         {
           "trait_type": "Groom's Outfit", 
-          "value": "Dollar Bills"
+          "value": "Suspenders"
         }, 
         {
           "trait_type": "Bride's Outfit", 
@@ -17,7 +17,7 @@
         }, 
         {
           "trait_type": "Groom's expression", 
-          "value": "Happy"
+          "value": "Ah Choo!"
         }, 
         {
           "trait_type": "Bride's Expression", 
